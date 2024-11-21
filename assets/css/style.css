@@ -663,21 +663,6 @@ body { background: var(--white); }
 
 
 
-/*-----------------------------------*\
- * #CTA
-\*-----------------------------------*/
-
-.cta {
-  background: var(--bright-navy-blue);
-  padding-block: var(--section-padding);
-}
-
-.cta :is(.section-subtitle, .section-title, .section-text) { color: var(--white); }
-
-.cta .section-text { font-size: var(--fs-5); }
-
-
-
 
 
 /*-----------------------------------*\
@@ -744,70 +729,6 @@ address {
 }
 
 .contact-link:is(:hover, :focus) { color: var(--white); }
-
-.form-text {
-  font-size: var(--fs-5);
-  margin-bottom: 20px;
-}
-
-.footer-form .input-field {
-  background: var(--white);
-  font-size: var(--fs-5);
-  padding: 15px 20px;
-  border-radius: 100px;
-  margin-bottom: 10px;
-}
-
-.footer-form .btn { width: 100%; }
-
-.footer-bottom {
-  --gunmetal: hsl(205, 36%, 17%);
-  background: var(--gunmetal);
-  padding-block: 20px;
-  text-align: center;
-}
-
-.copyright {
-  color: var(--gainsboro);
-  font-size: var(--fs-5);
-  margin-bottom: 10px;
-}
-
-.copyright a {
-  color: inherit;
-  display: inline-block;
-}
-
-.copyright a:is(:hover, :focus) { color: var(--white); }
-
-.footer-bottom-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 21px;
-}
-
-.footer-bottom-list > li { position: relative; }
-
-.footer-bottom-list > li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  right: -10px;
-  bottom: 3px;
-  width: 1px;
-  background: hsla(0, 0%, 100%, 0.2);
-}
-
-.footer-bottom-link {
-  color: var(--gainsboro);
-  font-size: var(--fs-7);
-  transition: var(--transition);
-}
-
-.footer-bottom-link:is(:hover, :focus) { color: var(--white); }
-
-
 
 
 
@@ -888,7 +809,7 @@ address {
 
   .helpline-box .icon-box { padding: 14px; }
 
-  .header-top .logo img { max-width: unset; }
+  .header-top .logo img { max-width: 100px; }
 
   .search-btn { font-size: 30px; }
 
@@ -1084,21 +1005,6 @@ address {
 
 
 
-  /**
-   * CTA
-   */
-
-  .cta .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .cta-content { width: calc(100% - 225px); }
-
-  .cta .section-text { margin-inline: 0; }
-
-
 
   /**
    * FOOTER
@@ -1234,28 +1140,8 @@ address {
 
 
 
-  /**
-   * CTA 
-   */
-
-  .cta .section-title { max-width: 25ch; }
 
 
-
-  /**
-   * FOOTER
-   */
-
-  .footer-top .container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-  }
-
-  .footer-form { grid-column: unset; }
-
-  .form-wrapper { flex-direction: column; }
-
-  .footer-form .btn { width: 100%; }
 
 }
 
