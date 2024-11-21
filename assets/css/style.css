@@ -640,18 +640,22 @@ body { background: var(--white); }
 
 .gallery-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.gallery-item {
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .gallery-image {
   width: 100%;
   height: 100%;
-  border-radius: var(--radius-15);
-  overflow: hidden;
 }
-
-.gallery-item:nth-child(3) { grid-area: 1 / 2 / 3 / 3; }
 
 .gallery-image img {
   width: 100%;
@@ -1137,12 +1141,6 @@ address {
   .meta-box { --fs-8: 13px; }
 
   .meta-box > ion-icon { font-size: 15px; }
-
-
-
-
-
-
 }
 
 
