@@ -402,19 +402,13 @@ body { background: var(--white); }
 
 
 
-
-
-/*-----------------------------------*\
- * #TOUR SEARCH
-\*-----------------------------------*/
-
 /*-----------------------------------*\
  * #TOUR SEARCH
 \*-----------------------------------*/
 
 .tour-search {
   background: var(--bright-navy-blue);
-  padding-block: var(--section-padding);
+  padding-block: 20px;
 }
 
 

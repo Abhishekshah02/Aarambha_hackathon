@@ -24,6 +24,19 @@ const navToggleEvent = function (elem) {
 navToggleEvent(navElemArr);
 navToggleEvent(navLinks);
 
+/**
+ * Real-time date and time update
+ */
+
+function updateDateTime() {
+  const now = new Date();
+  const dateTimeString = now.toLocaleString();
+  document.getElementById('currentDateTime').textContent = dateTimeString;
+}
+
+// Update immediately and then every second
+updateDateTime();
+setInterval(updateDateTime, 1000);
 
 
 /**
