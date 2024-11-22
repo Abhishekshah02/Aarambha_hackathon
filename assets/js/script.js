@@ -30,7 +30,16 @@ navToggleEvent(navLinks);
 
 function updateDateTime() {
   const now = new Date();
-  const dateTimeString = now.toLocaleString();
+  const options = {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,  // This ensures 24-hour format
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  };
+  const dateTimeString = now.toLocaleString('en-US', options).replace(',', '').replace('at', '');
   document.getElementById('currentDateTime').textContent = dateTimeString;
 }
 

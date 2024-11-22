@@ -94,7 +94,7 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
+  z-index: 10;
 }
 
 .chatbot-icon img {
@@ -113,7 +113,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   display: none;
   flex-direction: column;
-  z-index: 1000;
+  z-index: 10;
 }
 
 .chat-header {
@@ -496,12 +496,12 @@ body { background: var(--white); }
   top: 10px;
   margin-left: 450px;
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 50;
 }
 
 .event{
   font-size: 30px;
-  margin-left: 15px;
+  margin-left: 5px;
   margin-top: 30px;
 }
 
@@ -795,41 +795,6 @@ address {
 }
 
 .contact-link:is(:hover, :focus) { color: var(--white); }
-
-
-
-/*-----------------------------------*\
- * #GO TO TOP
-\*-----------------------------------*/
-
-.go-top {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  width: 35px;
-  height: 35px;
-  background: var(--bright-navy-blue);
-  color: var(--white);
-  display: grid;
-  place-items: center;
-  font-size: 18px;
-  border-radius: 6px;
-  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.5);
-  opacity: 0;
-  transform: translateY(10px);
-  visibility: hidden;
-  transition: var(--transition);
-}
-
-.go-top.active {
-  opacity: 0.8;
-  transform: translateY(0);
-  visibility: visible;
-}
-
-.go-top:is(:hover, :focus) { opacity: 1; }
-
-
 
 
 
