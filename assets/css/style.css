@@ -619,6 +619,33 @@ body { background: var(--white); }
   border-radius: 50px;
 }
 
+.card-img {
+  margin-left: -50px;
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0);
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0);
+}
+
+.card-img img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-img img:hover {
+  transform: scale(1.25);
+}
+
 .card-meta-item { position: relative; }
 
 .card-meta-item:not(:last-child)::after {
